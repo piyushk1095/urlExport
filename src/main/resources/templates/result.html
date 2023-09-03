@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Analysis Results</title>
+</head>
+<body>
+<h1>Analysis Results</h1>
+<h2>Page Title:</h2>
+<p th:text="${pageTitle}">Sample Page Title</p>
+
+<h2>Links:</h2>
+<table>
+    <thead>
+    <tr>
+        <th>Link</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="link : ${links}">
+        <td th:text="${link}">Sample Link</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
